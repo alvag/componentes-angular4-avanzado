@@ -10,6 +10,7 @@ import { DisplayComponent } from './display/display.component';
 import { AlertViewComponent } from './alert-view/alert-view.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TabComponent } from './tab/tab.component';
+import { SimpleAlertViewComponent } from './simple-alert-view/simple-alert-view.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,14 @@ import { TabComponent } from './tab/tab.component';
     AlertViewComponent,
     TabsComponent,
     TabComponent,
+    SimpleAlertViewComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
+  entryComponents: [SimpleAlertViewComponent],
   providers: [],
   bootstrap: [ AppComponent ]
 })
